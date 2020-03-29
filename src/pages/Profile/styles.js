@@ -91,6 +91,8 @@ export const List = styled.ul`
 `;
 
 export const Incident = styled.li`
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 480px;
     padding: 25px;
@@ -127,7 +129,7 @@ export const IncidentDrescription = styled.div`
 
 export const IncidentValue = styled.div`
     width: fit-content;
-    margin-top: 15px;
+    margin-top: auto;
     margin-left: auto;
     margin-right: -25px;
     padding: 5px;

@@ -57,7 +57,8 @@ function Profile() {
     }, [userId]);
 
     function handleLogout(){
-        localStorage.clear();
+        localStorage.removeItem('name');
+        localStorage.removeItem('user_id');
         history.push('/');
     }
 
