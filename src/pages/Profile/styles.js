@@ -12,7 +12,6 @@ export const Header = styled.div`
     width: 100%;
     height: 70px;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
@@ -28,7 +27,14 @@ export const Header = styled.div`
 `;
 
 export const Logo = styled.div`
+   
+`;
+
+export const UserInfo = styled.div`
     margin-right: auto;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
 `;
 
 export const ButtonAdd = styled.button`
@@ -36,23 +42,16 @@ export const ButtonAdd = styled.button`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 8px;
     font-size: 18px;
     border: none;
     border-radius: 5px;
     margin-right: 15px;
     background-color: ${props => props.theme.colors.primary};
+    color: ${props => props.theme.colors.textPrimary};
     
     &:hover{
         background-color: ${props => props.theme.colors.primary && lighten(0.05, props.theme.colors.primary)};
-    }
-
-    a{
-        padding: 10px;
-        color: ${props => props.theme.colors.textPrimary};
-
-        &:hover{
-            color: ${props => props.theme.colors.textPrimary};
-        }
     }
 
     i{
@@ -64,6 +63,16 @@ export const ButtonAdd = styled.button`
         i{
             display: none;
         }
+    }
+`;
+
+export const ButtonLogout = styled.button`
+    font-size: 18px;
+    
+    color: ${props => props.theme.colors.textBackground};
+    
+    &:hover{
+        color: ${props => props.theme.colors.textBackground && lighten(0.05, props.theme.colors.textBackground)};
     }
 `;
 
