@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 import { lighten, shade } from "polished";
 
 export default createGlobalStyle`
-    
+    /* @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap'); */
 
     *{
         margin: 0;
@@ -12,7 +12,7 @@ export default createGlobalStyle`
     }
 
     body{
-        font: 400 14px Roboto, sans-serif;
+        font: 400 14px Roboto;
         -webkit-font-smoothing: antialiased;
         background-color: ${props => props.theme.colors.background};
         color: ${props => props.theme.colors.textBackground};
